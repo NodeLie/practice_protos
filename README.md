@@ -9,5 +9,5 @@
     <li>protoc-gen-go --version</li>
     <li>go install github.com/go-task/task/v3/cmd/task@latest</li>
 </ul>
-
-
+<p>Если не хотим использовать Taskfile команда для генерации:</p>
+   <b>protoc -I proto proto/sso/sso.proto --go_out=./gen/go/ --go_opt=paths=source_relative --go-grpc_out=./gen/go/ --go-grpc_opt=paths=source_relative</b> 
